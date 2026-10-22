@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Access Dashboard | City of Palmdale</title>
+  <meta name="description" content="Tracking progress on the City of Palmdale Digital Access Study: goals, strategies, community data and resources for residents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=17">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-t="skip">Skip to main content</a>
+
+  <header class="site-header">
+    <svg class="hex-art hex-photos" viewBox="0 0 460 420" aria-hidden="true" focusable="false"><defs><clipPath id="hx11"><polygon points="208.7,90.0 256.3,117.5 256.3,172.5 208.7,200.0 161.1,172.5 161.1,117.5"/></clipPath><clipPath id="hx21"><polygon points="309.1,90.0 356.8,117.5 356.8,172.5 309.1,200.0 261.5,172.5 261.5,117.5"/></clipPath><clipPath id="hx02"><polygon points="58.0,177.0 105.6,204.5 105.6,259.5 58.0,287.0 10.4,259.5 10.4,204.5"/></clipPath><clipPath id="hx22"><polygon points="258.9,177.0 306.5,204.5 306.5,259.5 258.9,287.0 211.3,259.5 211.3,204.5"/></clipPath></defs><polygon points="58.0,3.0 105.6,30.5 105.6,85.5 58.0,113.0 10.4,85.5 10.4,30.5" fill="#2a5bb0" fill-opacity="0.9"/><polygon points="158.5,3.0 206.1,30.5 206.1,85.5 158.5,113.0 110.8,85.5 110.8,30.5" fill="#6abaea" fill-opacity="0.55"/><polygon points="258.9,3.0 306.5,30.5 306.5,85.5 258.9,113.0 211.3,85.5 211.3,30.5" fill="#ffffff" fill-opacity="0.1"/><polygon points="359.4,3.0 407.0,30.5 407.0,85.5 359.4,113.0 311.7,85.5 311.7,30.5" fill="#2a5bb0" fill-opacity="0.5"/><polygon points="108.2,90.0 155.9,117.5 155.9,172.5 108.2,200.0 60.6,172.5 60.6,117.5" fill="#ffffff" fill-opacity="0.08"/><image href="assets/img/cover-seniors.jpg" x="150.7" y="87.0" width="116" height="116" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx11)"/><image href="assets/img/cover-students.jpg" x="251.1" y="87.0" width="116" height="116" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx21)"/><polygon points="409.6,90.0 457.2,117.5 457.2,172.5 409.6,200.0 362.0,172.5 362.0,117.5" fill="#00a676" fill-opacity="0.9"/><image href="assets/img/cover-office.jpg" x="0.0" y="174.0" width="116" height="116" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx02)"/><polygon points="158.5,177.0 206.1,204.5 206.1,259.5 158.5,287.0 110.8,259.5 110.8,204.5" fill="#4a74b0" fill-opacity="0.8"/><image href="assets/img/cover-tablet.jpg" x="200.9" y="174.0" width="116" height="116" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx22)"/><polygon points="359.4,177.0 407.0,204.5 407.0,259.5 359.4,287.0 311.7,259.5 311.7,204.5" fill="#6abaea" fill-opacity="0.4"/><polygon points="208.7,264.0 256.3,291.5 256.3,346.5 208.7,374.0 161.1,346.5 161.1,291.5" fill="#2a5bb0" fill-opacity="0.5"/><polygon points="309.1,264.0 356.8,291.5 356.8,346.5 309.1,374.0 261.5,346.5 261.5,291.5" fill="#ffffff" fill-opacity="0.08"/></svg>
+    <div class="wrap header-inner">
+      <div class="brand">
+        <!-- To use the official city seal, add assets/palmdale-seal.png and uncomment:
+        <img src="assets/palmdale-seal.png" alt="" class="seal" width="56" height="56"> -->
+        <div>
+          <p class="city-name" data-t="cityName">City of Palmdale</p>
+          <h1 data-t="title">Digital Access Dashboard</h1>
+          <p class="subtitle" data-t="subtitle">Tracking progress on the City of Palmdale Digital Access Study</p>
+        </div>
+      </div>
+      <button type="button" class="lang-toggle" id="lang-toggle"></button>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Sections">
+    <ul class="wrap" id="nav-list"></ul>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <section class="wrap intro" aria-labelledby="intro-title">
+      <h2 id="intro-title" data-t="introTitle"></h2>
+      <p class="lede" data-t="intro"></p>
+      <div class="divide-head">
+        <h2 class="divide-title" data-t="kpiTitle"></h2>
+        <p class="divide-sub" data-t="kpiSub"></p>
+      </div>
+      <ul class="kpis" id="kpis"></ul>
+    </section>
+
+    <section class="momentum" aria-labelledby="momentum-title">
+      <svg class="hex-art hex-art-band" viewBox="0 0 460 420" aria-hidden="true" focusable="false"><polygon points="58.0,3.0 105.6,30.5 105.6,85.5 58.0,113.0 10.4,85.5 10.4,30.5" fill="#2a5bb0" fill-opacity="0.9"/><polygon points="158.5,3.0 206.1,30.5 206.1,85.5 158.5,113.0 110.8,85.5 110.8,30.5" fill="#6abaea" fill-opacity="0.55"/><polygon points="258.9,3.0 306.5,30.5 306.5,85.5 258.9,113.0 211.3,85.5 211.3,30.5" fill="#ffffff" fill-opacity="0.1"/><polygon points="359.4,3.0 407.0,30.5 407.0,85.5 359.4,113.0 311.7,85.5 311.7,30.5" fill="#2a5bb0" fill-opacity="0.5"/><polygon points="108.2,90.0 155.9,117.5 155.9,172.5 108.2,200.0 60.6,172.5 60.6,117.5" fill="#ffffff" fill-opacity="0.08"/><polygon points="208.7,90.0 256.3,117.5 256.3,172.5 208.7,200.0 161.1,172.5 161.1,117.5" fill="#00a676" fill-opacity="0.85"/><polygon points="309.1,90.0 356.8,117.5 356.8,172.5 309.1,200.0 261.5,172.5 261.5,117.5" fill="#4a74b0" fill-opacity="0.8"/><polygon points="409.6,90.0 457.2,117.5 457.2,172.5 409.6,200.0 362.0,172.5 362.0,117.5" fill="#ffffff" fill-opacity="0.12"/><polygon points="58.0,177.0 105.6,204.5 105.6,259.5 58.0,287.0 10.4,259.5 10.4,204.5" fill="#4a74b0" fill-opacity="0.45"/><polygon points="158.5,177.0 206.1,204.5 206.1,259.5 158.5,287.0 110.8,259.5 110.8,204.5" fill="#ffffff" fill-opacity="0.1"/><polygon points="258.9,177.0 306.5,204.5 306.5,259.5 258.9,287.0 211.3,259.5 211.3,204.5" fill="#2a5bb0" fill-opacity="0.9"/><polygon points="359.4,177.0 407.0,204.5 407.0,259.5 359.4,287.0 311.7,259.5 311.7,204.5" fill="#6abaea" fill-opacity="0.4"/><polygon points="208.7,264.0 256.3,291.5 256.3,346.5 208.7,374.0 161.1,346.5 161.1,291.5" fill="#2a5bb0" fill-opacity="0.5"/><polygon points="309.1,264.0 356.8,291.5 356.8,346.5 309.1,374.0 261.5,346.5 261.5,291.5" fill="#ffffff" fill-opacity="0.08"/></svg>
+      <div class="wrap">
+        <h2 id="momentum-title" data-t="momentumTitle"></h2>
+        <p class="momentum-sub" data-t="momentumSub"></p>
+        <ul class="momentum-list" id="momentum"></ul>
+      </div>
+    </section>
+
+    <section class="band" id="progress" aria-labelledby="progress-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 id="progress-title" data-t="progressTitle"></h2>
+            <p data-t="progressIntro"></p>
+          </div>
+          <p class="updated" id="updated"></p>
+        </div>
+
+        <div class="overall" id="overall"></div>
+
+        <div class="controls">
+          <div class="control-group" role="group" id="filter-group" aria-labelledby="filter-label">
+            <span id="filter-label" class="control-label" data-t="filterLabel"></span>
+            <div class="chips" id="filters"></div>
+          </div>
+          <div class="control-group" role="group" aria-labelledby="view-label">
+            <span id="view-label" class="control-label" data-t="viewLabel"></span>
+            <div class="segmented" id="views"></div>
+          </div>
+        </div>
+
+        <div id="goal-cards" class="goal-grid"></div>
+        <div id="matrix" class="matrix" hidden></div>
+        <p class="sr-only" aria-live="polite" id="filter-status"></p>
+
+        <div class="actions">
+          <button type="button" class="btn" id="download"></button>
+          <button type="button" class="btn" id="print"></button>
+        </div>
+
+        <h3 class="sub-title" data-t="milestonesTitle"></h3>
+        <ol class="milestones" id="milestones"></ol>
+      </div>
+    </section>
+
+    <section class="wrap" id="need" aria-labelledby="need-title">
+      <h2 id="need-title" data-t="needTitle"></h2>
+      <p data-t="needIntro"></p>
+      <div class="chart-grid" id="breakdowns"></div>
+      <h3 class="sub-title" data-t="compareTitle"></h3>
+      <div class="chart-grid two" id="comparisons"></div>
+      <p class="source" data-t="source"></p>
+    </section>
+
+    <section class="band" id="heard" aria-labelledby="heard-title">
+      <div class="wrap">
+        <h2 id="heard-title" data-t="heardTitle"></h2>
+        <ul class="engagement" id="engagement"></ul>
+        <ul class="event-photos" id="event-photos"></ul>
+        <p data-t="heardIntro"></p>
+        <ul class="challenges" id="challenges"></ul>
+        <h3 class="sub-title" data-t="groupsTitle"></h3>
+        <ul class="groups" id="groups"></ul>
+      </div>
+    </section>
+
+    <section class="wrap" id="funding" aria-labelledby="funding-title">
+      <h2 id="funding-title" data-t="fundingTitle"></h2>
+      <div class="funding-grid">
+        <div>
+          <h3 class="sub-title" data-t="fundingSecured"></h3>
+          <ul class="funding-secured" id="funding-secured"></ul>
+        </div>
+        <div>
+          <h3 class="sub-title" data-t="fundingWatch"></h3>
+          <ul class="funding-watch" id="funding-watch"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band resources-band" id="resources" aria-labelledby="resources-title">
+      <div class="wrap">
+        <h2 id="resources-title" data-t="resourcesTitle"></h2>
+        <p data-t="resourcesIntro"></p>
+
+        <h3 class="sub-title" data-t="providersTitle"></h3>
+        <p class="providers-intro" data-t="providersIntro"></p>
+        <figure class="providers" id="providers"></figure>
+        <p class="source" data-t="providersNote"></p>
+
+        <div class="resource-grid" id="resource-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap" id="footer"></div>
+  </footer>
+
+  <script src="data/content.js?v=17"></script>
+  <script src="data/progress.js?v=17"></script>
+  <script src="assets/app.js?v=17"></script>
+</body>
+</html>
